@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Data Rich, Information Poor</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s15-03-where-does-data-come-from.html"><img src="shared/images/batch-left.png"></a> <a href="s15-03-where-does-data-come-from.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s15-05-data-warehouses-and-data-marts.html">Next Section</a> <a href="s15-05-data-warehouses-and-data-marts.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-38086-ch11_s04" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">11.4</span> Data Rich, Information Poor</h2>
+    <div class="learning_objectives editable block" id="fwk-38086-ch11_s04_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-38086-ch11_s04_l01">
+            <li>Know and be able to list the reasons why many organizations have data that can’t be converted to actionable information.</li>
+            <li>Understand why transactional databases can’t always be queried and what needs to be done to facilitate effective data use for analytics and business intelligence.</li>
+            <li>Recognize key issues surrounding data and privacy legislation.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="fwk-38086-ch11_s04_p02">Despite being awash in data, many organizations are data rich but information poor. A survey by consulting firm Accenture found 57 percent of companies reporting that they didn’t have a beneficial, consistently updated, companywide analytical capability. Among major decisions, only 60 percent were backed by analytics—40 percent were made by intuition and gut instinct.<span class="footnote" id="fwk-38086-fn11_027">R. King, “Business Intelligence Software’s Time Is Now,” <em class="emphasis">BusinessWeek</em>, March 2, 2009.</span> The big culprit limiting BI initiatives is getting data into a form where it can be used, analyzed, and turned into information. Here’s a look at some factors holding back information advantages.</p>
+    <div class="section" id="fwk-38086-ch11_s04_s01">
+        <h2 class="title editable block">Incompatible Systems</h2>
+        <p class="para editable block" id="fwk-38086-ch11_s04_s01_p01">Just because data is collected doesn’t mean it can be used. This limit is a big problem for large firms that have <span class="margin_term"><a class="glossterm">legacy systems</a><span class="glossdef">Older information systems that are often incompatible with other systems, technologies, and ways of conducting business. Incompatible legacy systems can be a major roadblock to turning data into information, and they can inhibit firm agility, holding back operational and strategic initiatives.</span></span>, outdated information systems that were not designed to share data, aren’t compatible with newer technologies, and aren’t aligned with the firm’s current business needs. The problem can be made worse by mergers and acquisitions, especially if a firm depends on operational systems that are incompatible with its partner. And the elimination of incompatible systems isn’t just a technical issue. Firms might be under extended agreement with different vendors or outsourcers, and breaking a contract or invoking an escape clause may be costly. Folks working in M&amp;A (the area of investment banking focused on valuing and facilitating mergers and acquisitions) beware—it’s critical to uncover these hidden costs of technology integration before deciding if a deal makes financial sense.</p>
+        <div class="callout editable block" id="fwk-38086-ch11_s04_s01_n01">
+            <h3 class="title">Legacy Systems: A Prison for Strategic Assets</h3>
+            <p class="para" id="fwk-38086-ch11_s04_s01_p02">The experience of one <em class="emphasis">Fortune</em> 100 firm that your author has worked with illustrates how incompatible information systems can actually hold back strategy. This firm was the largest in its category, and sold identical commodity products sourced from its many plants worldwide. Being the biggest should have given the firm scale advantages. But many of the firm’s manufacturing facilities and international locations developed or purchased separate, incompatible systems. Still more plants were acquired through acquisition, each coming with its own legacy systems.</p>
+            <p class="para" id="fwk-38086-ch11_s04_s01_p03">The plants with different information systems used <em class="emphasis">different</em> part numbers and naming conventions even though they sold <em class="emphasis">identical</em> products. As a result, the firm had no timely information on how much of a particular item was sold to which worldwide customers. The company was essentially operating as a collection of smaller, regional businesses, rather than as the worldwide behemoth that it was.</p>
+            <p class="para" id="fwk-38086-ch11_s04_s01_p04">After the firm developed an information system that standardized data across these plants, it was, for the first time, able to get a single view of worldwide sales. The firm then used this data to approach their biggest customers, negotiating lower prices in exchange for increased commitments in worldwide purchasing. This trade let the firm take share from regional rivals. It also gave the firm the ability to shift manufacturing capacity globally, as currency prices, labor conditions, disaster, and other factors impacted sourcing. The new information system in effect liberated the latent strategic asset of scale, increasing sales by well over a billion and a half dollars in the four years following implementation.</p>
+        </div>
+    </div>
+    <div class="section" id="fwk-38086-ch11_s04_s02">
+        <h2 class="title editable block">Operational Data Can’t Always Be Queried</h2>
+        <p class="para editable block" id="fwk-38086-ch11_s04_s02_p01">Another problem when turning data into information is that most transactional databases aren’t set up to be simultaneously accessed for reporting and analysis. When a customer buys something from a cash register, that action may post a sales record and deduct an item from the firm’s inventory. In most TPS systems, requests made to the database can usually be performed pretty quickly—the system adds or modifies the few records involved and it’s done—in and out in a flash.</p>
+        <p class="para editable block" id="fwk-38086-ch11_s04_s02_p02">But if a manager asks a database to analyze historic sales trends showing the most and least profitable products over time, they may be asking a computer to look at thousands of transaction records, comparing results, and neatly ordering findings. That’s not a quick in-and-out task, and it may very well require significant processing to come up with the request. Do this against the very databases you’re using to record your transactions, and you might grind your computers to a halt.</p>
+        <p class="para editable block" id="fwk-38086-ch11_s04_s02_p03">Getting data into systems that can support analytics is where data warehouses and data marts come in, the topic of our next section.</p>
+        <div class="key_takeaways editable block" id="fwk-38086-ch11_s04_s02_n01">
+            <h3 class="title">Key Takeaways</h3>
+            <ul class="itemizedlist" id="fwk-38086-ch11_s04_s02_l01">
+                <li>A major factor limiting business intelligence initiatives is getting data into a form where it can be used (i.e., analyzed and turned into information).</li>
+                <li>Legacy systems often limit data utilization because they were not designed to share data, aren’t compatible with newer technologies, and aren’t aligned with the firm’s current business needs.</li>
+                <li>Most transactional databases aren’t set up to be simultaneously accessed for reporting and analysis. In order to run analytics the data must first be ported to a data warehouse or data mart.</li>
+            </ul>
+        </div>
+        <div class="exercises editable block" id="fwk-38086-ch11_s04_s02_n02">
+            <h3 class="title">Questions and Exercises</h3>
+            <ol class="orderedlist" id="fwk-38086-ch11_s04_s02_l02">
+                <li>How might information systems impact mergers and acquisitions? What are the key issues to consider?</li>
+                <li>Discuss the possible consequences of a company having multiple plants, each with a different information system using different part numbers and naming conventions for identical products.</li>
+                <li>Why does it take longer, and require more processing power, to analyze sales trends by region and product, as opposed to posting a sales transaction?</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s15-03-where-does-data-come-from.html"><img src="shared/images/batch-left.png"></a> <a href="s15-03-where-does-data-come-from.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s15-05-data-warehouses-and-data-marts.html">Next Section</a> <a href="s15-05-data-warehouses-and-data-marts.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

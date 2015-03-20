@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Operating Systems</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s13-01-introduction.html"><img src="shared/images/batch-left.png"></a> <a href="s13-01-introduction.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s13-03-application-software.html">Next Section</a> <a href="s13-03-application-software.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-38086-ch09_s02" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">9.2</span> Operating Systems</h2>
+    <div class="learning_objectives editable block" id="fwk-38086-ch09_s02_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-38086-ch09_s02_l01">
+            <li>Understand what an operating system is and why computing devices require operating systems.</li>
+            <li>Appreciate how embedded systems extend Moore’s Law, allowing firms to create “smarter” products and services</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="fwk-38086-ch09_s02_p02">Computing hardware needs to be controlled, and that’s the role of the operating system. The operating system (sometimes called the “OS”) provides a common set of controls for managing computer hardware, making it easier for users to interact with computers and for programmers to write application software. Just about every computing device has an operating system—desktops and laptops, enterprise-class server computers, your mobile phone. Even specialty devices like iPods, video game consoles, and television set top boxes run some form of OS.</p>
+    <p class="para editable block" id="fwk-38086-ch09_s02_p03">Some firms, like Apple and Nintendo, develop their own proprietary OS for their own hardware. Microsoft sells operating systems to everyone from Dell to the ATM manufacturer Diebold (listen for the familiar Windows error beep on some cash machines). And there are a host of specialty firms, such as Wind River (purchased by Intel), that help firms develop operating systems for all sorts of devices that don’t necessarily look like a PC, including cars, video editing systems, and fighter jet control panels.</p>
+    <p class="para editable block" id="fwk-38086-ch09_s02_p04">Anyone who has used both a PC and a Mac and has noticed differences across these platforms can get a sense of the breadth of what an operating system does. Even for programs that are otherwise identical for these two systems (like the Firefox browser), subtitle differences are visible. Screen elements like menus, scroll bars, and window borders look different on the Mac than they do in Windows. So do the dialogue boxes that show up when you print or save.</p>
+    <p class="para editable block" id="fwk-38086-ch09_s02_p05">These items look and behave differently because each of these functions touches the hardware, and the team that developed Microsoft Windows created a system distinctly different from their Macintosh counterparts at Apple. Graphical <span class="margin_term"><a class="glossterm">user interface (UI)</a><span class="glossdef">The mechanism through which users interact with a computing device. The UI includes elements of the graphical user interface (or GUI, pronounced “<em class="emphasis">gooey</em>”), such as windows, scroll bars, buttons, menus, and dialogue boxes; and can also include other forms of interaction, such as touch screens, motion sensing controllers, or tactile devices used by the visually impaired.</span></span> items like scroll bars and menus are displayed on the hardware of the computer display. Files are saved to the hardware of a hard drive or other storage device. Most operating systems also include control panels, desktop file management, and other support programs to work directly with hardware elements like storage devices, displays, printers, and networking equipment. The Macintosh Finder and the Windows Explorer are examples of components of these operating systems. The consistent look, feel, and functionality that operating systems enforce across various programs help make it easier for users to learn new software, which reduces training costs and operator error. See <a class="xref" href="#fwk-38086-ch09_s02_f01" xrefstyle="select: label">Figure 9.2</a> for similarities and differences.</p>
+    <div class="figure large editable block" id="fwk-38086-ch09_s02_f01">
+        <p class="title"><span class="title-prefix">Figure 9.2</span> </p>
+        <img src="section_13/7923ab702f9310a2bae3e68421568b82.jpg">
+        <p class="para">Differences between the Windows and Mac operating systems are evident throughout the user interface, particularly when a program interacts with hardware.</p>
+    </div>
+    <p class="para editable block" id="fwk-38086-ch09_s02_p06">Operating systems are also designed to give programmers a common set of commands to consistently interact with the hardware. These commands make a programmer’s job easier by reducing program complexity and making it faster to write software while minimizing the possibility of errors in code. Consider what an OS does for the Wii game developer. Nintendo’s Wii OS provides Wii programmers with a set of common standards to use to access the Wiimote, play sounds, draw graphics, save files, and more. Without this, games would be a lot more difficult to write, they’d likely look differently, be less reliable, would cost more, and there would be fewer titles available.</p>
+    <p class="para editable block" id="fwk-38086-ch09_s02_p07">Similarly, when Apple provided developers with a common set of robust, easy-to-use standards for the iPhone and (via the App Store) an easy way for users to install these applications on top of the iPhone/iPod touch/iPad’s operating system (iOS), software development boomed, and Apple became hands-down the most versatile mobile computing device available.<span class="footnote" id="fwk-38086-fn09_002">The iPhone and iPod touch OS is derived from Apple’s Mac OS X operating system.</span>   In Apple’s case some <em class="emphasis">fifty thousand apps</em> became available through the App Store in less than a year. A good OS and software development platform can catalyze network effects (see <a class="xref" href="fwk-38086-ch05#fwk-38086-ch05" xrefstyle="select: label">Chapter 6 "Understanding Network Effects"</a>). While the OS seems geeky, its effective design has very strategic business implications!</p>
+    <div class="figure large editable block" id="fwk-38086-ch09_s02_f02">
+        <p class="title"><span class="title-prefix">Figure 9.3</span> Operating System Market Share for Desktop, Server, and Mobile Phones</p>
+        <img src="section_13/6460de11521ecddd8a5b3facff227f2f.jpg">
+        <div class="copyright">
+            <p class="para">Source: HitsLink (desktop, January 2011), IDC (server, Q1 2011), and Canalys.com (mobile, January 2011).</p>
+        </div>
+    </div>
+    <div class="callout editable block" id="fwk-38086-ch09_s02_n02">
+        <h3 class="title">Firmware and Embedded Systems</h3>
+        <p class="para" id="fwk-38086-ch09_s02_p08">Most personal computers have an operating system installed on their hard drives. This system allows the OS to be replaced or upgraded easily. But many smaller, special-purpose computing devices have their operating systems installed on nonvolatile memory, often on read-only memory (ROM) chips. Control programs stored on chips are sometimes referred to as <span class="margin_term"><a class="glossterm">firmware</a><span class="glossdef">Software stored on nonvolatile memory chips (as opposed to being stored on devices such as hard drives or removable discs). Despite the seemingly permanent nature of firmware, many products allow for firmware to be upgraded online or by connecting to another device.</span></span>. The OS in an iPod, mobile phone, or your TV’s set-top box is most likely stored as firmware. Your PC also has a tiny bit of firmware that allows it to do very basic functions like start-up (boot) and begin loading its operating system from disk.</p>
+        <p class="para" id="fwk-38086-ch09_s02_p09">Another term you might hear is <span class="margin_term"><a class="glossterm">embedded systems</a><span class="glossdef">Special-purpose software designed and included inside physical products (often on firmware). Embedded systems help make devices “smarter,” sharing usage information, helping diagnose problems, indicating maintenance schedules, providing alerts, or enabling devices to take orders from other systems.</span></span>. As computing gets cheaper, special-purpose technology is increasingly becoming embedded into all sorts of devices like cars, picture frames, aircraft engines, photocopiers, and heating and air conditioning systems. The software programs that make up embedded systems are often stored as firmware too.</p>
+        <p class="para" id="fwk-38086-ch09_s02_p10">Moore’s Law (see <a class="xref" href="fwk-38086-ch04#fwk-38086-ch04" xrefstyle="select: label">Chapter 5 "Moore’s Law: Fast, Cheap Computing and What It Means for the Manager"</a>) enables embedded systems, and these systems can create real strategic value. The Otis Elevator Company, a division of United Technologies, uses embedded systems in its products to warn its service centers when the firm’s elevators, escalators, and moving walkways need maintenance or repair. This warning provides Otis with several key benefits:</p>
+        <ol class="orderedlist" id="fwk-38086-ch09_s02_l02">
+            <li>Since products automatically contact Otis when they need attention, these systems generate a lucrative service business for the firm and make it more difficult for third parties to offer a competing business servicing Otis products.</li>
+            <li>Products contact service technicians to perform maintenance based on exact needs (e.g., lubricant is low, or a part has been used enough to be replaced) rather than guessed schedules, which makes service more cost-effective, products less likely to break down, and customers happier.</li>
+            <li>Any product failures are immediately detected, with embedded systems typically dispatching technicians before a client’s phone call.</li>
+            <li>The data is fed back to Otis’s R&amp;D group, providing information on reliability and failure so that engineers can use this info to design better products.</li>
+        </ol>
+        <p class="para" id="fwk-38086-ch09_s02_p11">Collectively, software embedded on tiny chips yields very big benefits, for years helping Otis remain at the top of its industry.</p>
+    </div>
+    <div class="key_takeaways editable block" id="fwk-38086-ch09_s02_n03">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="fwk-38086-ch09_s02_l03">
+            <li>The operating system (OS) controls a computer’s hardware and provides a common set of commands for writing programs.</li>
+            <li>Most computing devices (enterprise-class server computers, PCs, phones, set-top boxes, video games, cars, the Mars Rover) have an operating system.</li>
+            <li>Some products use operating systems provided by commercial firms, while others develop their own operating system. Others may leverage open source alternatives (see <a class="xref" href="fwk-38086-ch10#fwk-38086-ch10" xrefstyle="select: label">Chapter 10 "Software in Flux: Partly Cloudy and Sometimes Free"</a>).</li>
+            <li>Embedded systems are special-purpose computer systems designed to perform one or a few dedicated functions, and are frequently built into conventional products like cars, air conditioners, and elevators.</li>
+            <li>Embedded systems can make products and services more efficient, more reliable, more functional, and can enable entire new businesses and create or reinforce resources for competitive advantage.</li>
+        </ul>
+    </div>
+    <div class="exercises editable block" id="fwk-38086-ch09_s02_n04">
+        <h3 class="title">Questions and Exercises</h3>
+        <ol class="orderedlist" id="fwk-38086-ch09_s02_l04">
+            <li>What does an operating system do? Why do you need an operating system? How do operating systems make a programmer’s job easier? How do operating systems make life easier for end users?</li>
+            <li>How has the market for desktop, server, and mobile operating systems changed in recent years? Do certain products seem to be gaining traction? Why do you think this is the case?</li>
+            <li>What kinds of operating systems are used in the devices that you own? On your personal computer? Your mobile phone? The set-top box on top of your television? Are there other operating systems that you come into contact with? If you can’t tell which operating system is in each of these devices, see if you can search the Internet to find out.</li>
+            <li>For your list in the prior question (and to the extent that you can), diagram the hardware/software “layer cake” for these devices.</li>
+            <li>For this same list, do you think each device’s manufacturer wrote all of the software that you use on these devices? Can you add or modify software to all of these devices? Why or why not? What would the implications be for cost, security, complexity, reliability, updates and upgrades, and the appeal of each device?</li>
+            <li>Some ATM machines use Windows. Why would an ATM manufacturer choose to build its systems owing Windows? Why might it want to avoid this? Are there other non-PC devices you’ve encountered that were running some form of Windows?</li>
+            <li>What are embedded systems? When might firms want to install software on chips instead of on a hard drive?</li>
+            <li>It’s important to understand how technology impacts a firm’s strategy and competitive environment. Consider the description of Otis elevator’s use of embedded systems. Which parts of the value chain does this impact? How? Consider the “five forces”: How does the system impact the firm’s competitive environment? Are these systems a source of competitive advantage? If not, explain why not? If they are, what kinds of resources for competitive advantage can these kinds of embedded systems create?</li>
+            <li>Can you think of other firms that can or do leverage embedded systems? Provide examples and list the kinds of benefits these might offer firms and consumers.</li>
+            <li>Research the Americans with Disabilities Act of 1990 (or investigate if your nation has a similar law), and the implications of this legislation for software developers and Web site operators. Have firms been successfully sued when their software or Web sites could not be accessed by users with physical challenges? What sorts of issues should developers consider when making their products more accessible? What practices might they avoid?</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s13-01-introduction.html"><img src="shared/images/batch-left.png"></a> <a href="s13-01-introduction.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s13-03-application-software.html">Next Section</a> <a href="s13-03-application-software.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

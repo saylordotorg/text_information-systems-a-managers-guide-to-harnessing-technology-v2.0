@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Writing Software</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s13-04-distributed-computing.html"><img src="shared/images/batch-left.png"></a> <a href="s13-04-distributed-computing.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s13-06-understanding-technology-beyon.html">Next Section</a> <a href="s13-06-understanding-technology-beyon.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-38086-ch09_s05" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">9.5</span> Writing Software</h2>
+    <div class="learning_objectives editable block" id="fwk-38086-ch09_s05_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-38086-ch09_s05_l01">
+            <li>Understand, at a managerial level, what programming languages are and how software is developed.</li>
+            <li>Recognize that an operating system and microprocessor constrain the platform upon which most compiled application software will run.</li>
+            <li>Understand what Java is and why it is significant.</li>
+            <li>Know what scripting languages are.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="fwk-38086-ch09_s05_p02">So you’ve got a great idea that you want to express in software—how do you go about creating a program? Programmers write software in a <span class="margin_term"><a class="glossterm">programming language</a><span class="glossdef">Provides the standards, syntax, statements, and instructions for writing computer software.</span></span>. While each language has its strengths and weaknesses, most commercial software is written in C++ (pronounced “see plus plus”) or C# (pronounced “see sharp”). Visual Basic (from Microsoft) and Java (from Sun) are also among the more popular of the dozens of programming languages available. Web developers may favor specialty languages like Ruby and Python, while languages like SQL are used in databases.</p>
+    <p class="para editable block" id="fwk-38086-ch09_s05_p03">Most professional programmers use an <span class="margin_term"><a class="glossterm">integrated development environment (IDE)</a><span class="glossdef">An application that includes an editor (a sort of programmer’s word processor), debugger, and compiler, among other tools.</span></span> to write their code. The IDE includes a text editor, a debugger for sleuthing out errors, and other useful programming tools. The most popular IDE for Windows is Visual Studio, while Apple offers the Xcode IDE. Most IDEs can support several different programming languages. The IDE will also <span class="margin_term"><a class="glossterm">compile</a><span class="glossdef">Step in which program code written in a language that humans can more easily understand, is then converted into a form (expressed in patterns of ones and zeros) that can be understood and executed by a microprocessor. Programmers using conventional programming languages must compile their software before making it available for execution.</span></span> a programmer’s code, turning the higher-level lines of instructions that are readable by humans into lower-level instructions expressed as the patterns of ones and zeros that are readable by a computer’s microprocessor.</p>
+    <div class="figure large editable block" id="fwk-38086-ch09_s05_f01">
+        <p class="title"><span class="title-prefix">Figure 9.8</span> </p>
+        <img src="section_13/7a5cf9a248400d096d6a349766027c48.jpg">
+        <p class="para">Microsoft’s Visual Studio IDE supports desktop, server, mobile, and cloud computing software development.</p>
+    </div>
+    <p class="para editable block" id="fwk-38086-ch09_s05_p04">Look at the side of a box of commercial software and you’re likely to see system requirements that specify the operating system and processor that the software is designed for (e.g., “this software works on computers with Windows 7 and Intel-compatible processors”). Wouldn’t it be great if software could be written once and run everywhere? That’s the idea behind <span class="margin_term"><a class="glossterm">Java</a><span class="glossdef">A programming language, initially developed by Sun Microsystems, designed to provide true platform independence (“write once, run anywhere”) for application developers. In most cases, Java apps are developed to be executed by a Java Virtual Machine—an interpreting layer that translates code as it executes, into the format required by the operating system and microprocessor. Without Java, application developers have to write and compile software to execute natively by a specific operating system / microprocessor combination (e.g., Windows/Intel, Linux PowerPC, Mac/Intel, Linux/Intel).</span></span>—a programming language developed by Sun Microsystems.</p>
+    <p class="para editable block" id="fwk-38086-ch09_s05_p05">Java programmers don’t write code with specific operating system commands (say for Windows, Mac OS X, or Linux), instead they use special Java commands to control their user interface or interact with the display and other hardware. Java programs can run on any computer that has a Java Virtual Machine (JVM), a software layer that interprets Java code so that it can be understood by the operating system and processor of a given computer. Java’s platform independence—the ability for developers to “write once, run everywhere”—is its biggest selling point. Many Web sites execute Java applets to run the animation you might see in advertisements or games. Java has also been deployed on over six billion mobile phones worldwide, and is popular among enterprise programmers who want to be sure their programs can scale from smaller hardware up to high-end supercomputers. As long as the machine receiving the Java code has a JVM, then the Java application should run. However, Java has not been popular for desktop applications. Since Java isn’t optimized to take advantage of interface elements specific to the Mac or Windows, most Java desktop applications look clunky and unnatural. Java code that runs through the JVM interpreter is also slower than code compiled for the native OS and processor that make up a platform.<span class="footnote" id="fwk-38086-fn09_013">Some offerings have attempted to overcome the speed issues associated with interpreting Java code. Just-in-time compilation stores code in native processor-executable form after each segment is initially interpreted, further helping to speed execution. Other environments allow for Java to be compiled ahead of time so that it can be directly executed by a microprocessor. However, this process eliminates code portability—Java’s key selling point. And developers preparing their code for the JVM actually precompile code into something called Java bytecode, a format that’s less human friendly but more quickly interpreted by JVM software.</span></p>
+    <p class="para editable block" id="fwk-38086-ch09_s05_p06">Scripting languages are the final category of programming tool that we’ll cover. <span class="margin_term"><a class="glossterm">Scripting languages</a><span class="glossdef">Programming tool that executes within an application. Scripting languages are interpreted within their applications, rather than compiled to run directly by a microprocessor.</span></span> typically execute within an application. Microsoft offers a scripting language called VB Script (a derivative of Visual Basic) to automate functions in Office. And most browsers and Web servers support JavaScript, a language that helps make the Web more interactive (despite its name, JavaScript is unrelated to Java). Scripting languages are <span class="margin_term"><a class="glossterm">interpreted</a><span class="glossdef">Languages where each line of written code is converted (by a software program, called an “interpreter”) for execution at run-time. Most scripting languages are interpreted languages. Many programmers also write Java applications to be interpreted by the Java Virtual Machine.</span></span> within their applications, rather than compiled to run directly by a microprocessor. This distinction makes them slower than the kinds of development efforts found in most commercial software. But most scripting languages are usually easy to use, and are often used both by professional programmers and power users.</p>
+    <div class="key_takeaways editable block" id="fwk-38086-ch09_s05_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="fwk-38086-ch09_s05_l02">
+            <li>Programs are often written in a tool called an IDE, an application that includes an editor (a sort of programmer’s word processor), debugger, and compiler, among other tools.</li>
+            <li>Compiling takes code from the high-level language that humans can understand and converts them into the sets of ones and zeros in patterns representing instructions that microprocessors understand.</li>
+            <li>Popular programming languages include C++, C#, Visual Basic, and Java.</li>
+            <li>Most software is written for a platform—a combination of an operating system and microprocessor.</li>
+            <li>Java is designed to be platform independent. Computers running Java have a separate layer called a Java Virtual Machine that translates (interprets) Java code so that it can be executed on an operating system/processor combination. In theory, Java is “write once, run everywhere,” as opposed to conventional applications that are written for an operating system and compiled for an OS/processor combination.</li>
+            <li>Java is popular on mobile phones, enterprise computing, and to make Web sites more interactive. Java has never been a successful replacement for desktop applications, largely because user interface differences among the various operating systems are too great to be easily standardized.</li>
+            <li>Scripting languages are interpreted languages, such as VB Script or Java Script. Many scripting languages execute within an application (like the Office programs, a Web browser, or to support the functions of a Web server). They are usually easier to program, but are less powerful and execute more slowly than compiled languages.</li>
+        </ul>
+    </div>
+    <div class="exercises editable block" id="fwk-38086-ch09_s05_n03">
+        <h3 class="title">Questions and Exercises</h3>
+        <ol class="orderedlist" id="fwk-38086-ch09_s05_l03">
+            <li>List popular programming languages.</li>
+            <li>What’s an IDE? Why do programmers use IDEs? Name IDEs popular for Windows and Mac users.</li>
+            <li>What is the difference between a compiled programming language and an interpreted programming language?</li>
+            <li>Name one advantage and one disadvantage of scripting languages.</li>
+            <li>In addition to computers, on what other technology has Java been deployed? Why do you suppose Java is particularly attractive for these kinds of applications?</li>
+            <li>What’s a JVM? Why do you need it?</li>
+            <li>What if a programmer wrote perfect Java code, but there was a bug on the JVM installed on a given computer? What might happen?</li>
+            <li>Why would developers choose to write applications in Java? Why might they skip Java and choose another programming language?</li>
+            <li>Why isn’t Java popular for desktop applications?</li>
+            <li>Go to <a class="link" target="_blank" href="http://www.java.com">http://www.java.com</a>. Click on “Do I have Java?” Is Java running on your computer? Which version?</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s13-04-distributed-computing.html"><img src="shared/images/batch-left.png"></a> <a href="s13-04-distributed-computing.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s13-06-understanding-technology-beyon.html">Next Section</a> <a href="s13-06-understanding-technology-beyon.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

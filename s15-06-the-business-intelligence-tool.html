@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>The Business Intelligence Toolkit</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s15-05-data-warehouses-and-data-marts.html"><img src="shared/images/batch-left.png"></a> <a href="s15-05-data-warehouses-and-data-marts.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s15-07-data-asset-in-action-technolog.html">Next Section</a> <a href="s15-07-data-asset-in-action-technolog.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-38086-ch11_s06" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">11.6</span> The Business Intelligence Toolkit</h2>
+    <div class="learning_objectives editable block" id="fwk-38086-ch11_s06_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-38086-ch11_s06_l01">
+            <li>Know the tools that are available to turn data into information.</li>
+            <li>Identify the key areas where businesses leverage data mining.</li>
+            <li>Understand some of the conditions under which analytical models can fail.</li>
+            <li>Recognize major categories of artificial intelligence and understand how organizations are leveraging this technology.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="fwk-38086-ch11_s06_p02">So far we’ve discussed where data can come from, and how we can get data into a form where we can use it. But how, exactly, do firms turn that data into information? That’s where the various software tools of business intelligence (BI) and analytics come in. Potential products in the business intelligence toolkit range from simple spreadsheets to ultrasophisticated data mining packages leveraged by teams employing “rocket-science” mathematics.</p>
+    <div class="section" id="fwk-38086-ch11_s06_s01">
+        <h2 class="title editable block">Query and Reporting Tools</h2>
+        <p class="para editable block" id="fwk-38086-ch11_s06_s01_p01">The idea behind query and reporting tools is to present users with a subset of requested data, selected, sorted, ordered, calculated, and compared, as needed. Managers use these tools to see and explore what’s happening inside their organizations.</p>
+        <p class="para editable block" id="fwk-38086-ch11_s06_s01_p02"><span class="margin_term"><a class="glossterm">Canned reports</a><span class="glossdef">Reports that provide regular summaries of information in a predetermined format.</span></span> provide regular summaries of information in a predetermined format. They’re often developed by information systems staff and formats can be difficult to alter. By contrast, <span class="margin_term"><a class="glossterm">ad hoc reporting tools</a><span class="glossdef">Tools that put users in control so that they can create custom reports on an as-needed basis by selecting fields, ranges, summary conditions, and other parameters.</span></span> allow users to dive in and create their own reports, selecting fields, ranges, and other parameters to build their own reports on the fly. <span class="margin_term"><a class="glossterm">Dashboards</a><span class="glossdef">A heads-up display of critical indicators that allow managers to get a graphical glance at key performance metrics.</span></span> provide a sort of heads-up display of critical indicators, letting managers get a graphical glance at key performance metrics. Some tools may allow data to be exported into spreadsheets. Yes, even the lowly spreadsheet can be a powerful tool for modeling “what if” scenarios and creating additional reports (of course be careful: if data can be easily exported, then it can potentially leave the firm dangerously exposed, raising privacy, security, legal, and competitive concerns).</p>
+        <div class="figure large editable block" id="fwk-38086-ch11_s06_s01_f01">
+            <p class="title"><span class="title-prefix">Figure 11.3</span> The Federal IT Dashboard</p>
+            <img src="section_15/ac5e9166fb26e09915126a50961cec73.jpg">
+            <p class="para">The Federal IT dashboard offers federal agencies, and the general public, information about the government’s IT investments.</p>
+        </div>
+        <p class="para editable block" id="fwk-38086-ch11_s06_s01_p03">A subcategory of reporting tools is referred to as <span class="margin_term"><a class="glossterm">online analytical processing (OLAP)</a><span class="glossdef">A method of querying and reporting that takes data from standard relational databases, calculates and summarizes the data, and then stores the data in a special database called a data cube.</span></span> (pronounced “oh-lap”). Data used in OLAP reporting is usually sourced from standard relational databases, but it’s calculated and summarized in advance, across multiple dimensions, with the data stored in a special database called a <span class="margin_term"><a class="glossterm">data cube</a><span class="glossdef">A special database used to store data in OLAP reporting.</span></span>. This extra setup step makes OLAP fast (sometimes one thousand times faster than performing comparable queries against conventional relational databases). Given this kind of speed boost, it’s not surprising that data cubes for OLAP access are often part of a firm’s data mart and data warehouse efforts.</p>
+        <p class="para editable block" id="fwk-38086-ch11_s06_s01_p04">A manager using an OLAP tool can quickly explore and compare data across multiple factors such as time, geography, product lines, and so on. In fact, OLAP users often talk about how they can “slice and dice” their data, “drilling down” inside the data to uncover new insights. And while conventional reports are usually presented as a summarized list of information, OLAP results look more like a spreadsheet, with the various dimensions of analysis in rows and columns, with summary values at the intersection.</p>
+
+        <div class="callout editable block" id="fwk-38086-ch11_s06_s01_n01">
+            <h3 class="title">Public Sector Reporting Tools in Action: Fighting Crime and Fighting Waste</h3>
+            <p class="para" id="fwk-38086-ch11_s06_s01_p05">Access to ad hoc query and reporting tools can empower all sorts of workers. Consider what analytics tools have done for the police force in Richmond, Virginia. The city provides department investigators with access to data from internal sources such as 911 logs and police reports, and combines this with outside data including neighborhood demographics, payday schedules, weather reports, traffic patterns, sports events, and more.</p>
+            <p class="para" id="fwk-38086-ch11_s06_s01_p06">Experienced officers dive into this data, exploring when and where crimes occur. These insights help the department decide how to allocate its limited policing assets to achieve the biggest impact. While IT staffers put the system together, the tools are actually used by officers with expertise in fighting street crime—the kinds of users with the knowledge to hunt down trends and interpret the causes behind the data. And it seems this data helps make smart cops even smarter—the system is credited with delivering a single-year crime-rate reduction of 20 percent.<span class="footnote" id="fwk-38086-fn11_033">S. Lohr, “Reaping Results: Data-Mining Goes Mainstream,” <em class="emphasis">New York Times</em>, May 20, 2007.</span></p>
+            <p class="para" id="fwk-38086-ch11_s06_s01_p07">As it turns out, what works for cops also works for bureaucrats. When administrators for Albuquerque were given access to ad hoc reporting systems, they uncovered all sorts of anomalies, prompting excess spending cuts on everything from cell phone usage to unnecessarily scheduled overtime. And once again, BI performed for the public sector. The Albuquerque system delivered the equivalent of $2 million in savings in just the first three weeks it was used.<span class="footnote" id="fwk-38086-fn11_034">R. Mulcahy, “ABC: An Introduction to Business Intelligence,” <em class="emphasis">CIO</em>, March 6, 2007.</span></p>
+        </div>
+    </div>
+    <div class="section" id="fwk-38086-ch11_s06_s02">
+        <h2 class="title editable block">Data Mining</h2>
+        <p class="para editable block" id="fwk-38086-ch11_s06_s02_p01">While reporting tools can help users explore data, modern data sets can be so large that it might be impossible for humans to spot underlying trends. That’s where data mining can help. <span class="margin_term"><a class="glossterm">Data mining</a><span class="glossdef">The process of using computers to identify hidden patterns in, and to build models from, large data sets.</span></span> is the process of using computers to identify hidden patterns and to build models from large data sets.</p>
+        <p class="para editable block" id="fwk-38086-ch11_s06_s02_p02">Some of the key areas where businesses are leveraging data mining include the following:</p>
+        <ul class="itemizedlist editable block" id="fwk-38086-ch11_s06_s02_l01">
+            <li>
+<em class="emphasis">Customer segmentation</em>—figuring out which customers are likely to be the most valuable to a firm.</li>
+            <li>
+<em class="emphasis">Marketing and promotion targeting</em>—identifying which customers will respond to which offers at which price at what time.</li>
+            <li>
+<em class="emphasis">Market basket analysis</em>—determining which products customers buy together, and how an organization can use this information to cross-sell more products or services.</li>
+            <li>
+<em class="emphasis">Collaborative filtering</em>—personalizing an individual customer’s experience based on the trends and preferences identified across similar customers.</li>
+            <li>
+<em class="emphasis">Customer churn</em>—determining which customers are likely to leave, and what tactics can help the firm avoid unwanted defections.</li>
+            <li>
+<em class="emphasis">Fraud detection</em>—uncovering patterns consistent with criminal activity.</li>
+            <li>
+<em class="emphasis">Financial modeling</em>—building trading systems to capitalize on historical trends.</li>
+            <li>
+<em class="emphasis">Hiring and promotion</em>—identifying characteristics consistent with employee success in the firm’s various roles.</li>
+        </ul>
+        <p class="para editable block" id="fwk-38086-ch11_s06_s02_p03">For data mining to work, two critical conditions need to be present: (1) the organization must have clean, consistent data, and (2) the events in that data should reflect current and future trends. The recent financial crisis provides lessons on what can happen when either of these conditions isn’t met.</p>
+        <p class="para editable block" id="fwk-38086-ch11_s06_s02_p04">First lets look at problems with using bad data. A report in the <em class="emphasis">New York Times</em> has suggested that in the period leading up to the 2008 financial crisis, some banking executives deliberately deceived risk management systems in order to skew capital-on-hand requirements. This deception let firms load up on risky debt, while carrying less cash for covering losses.<span class="footnote" id="fwk-38086-fn11_035">S. Hansell, “How Wall Street Lied to Its Computers,” <em class="emphasis">New York Times</em>, September 18, 2008.</span> Deceive your systems with bad data and your models are worthless. In this case, wrong estimates from bad data left firms grossly overexposed to risk. When debt defaults occurred; several banks failed, and we entered the worst financial crisis since the Great Depression.</p>
+        <p class="para editable block" id="fwk-38086-ch11_s06_s02_p05">Now consider the problem of historical consistency: Computer-driven investment models can be very effective when the market behaves as it has in the past. But models are blind when faced with the equivalent of the “hundred-year flood” (sometimes called <em class="emphasis">black swans</em>); events so extreme and unusual that they never showed up in the data used to build the model.</p>
+        <p class="para editable block" id="fwk-38086-ch11_s06_s02_p06">We saw this in the late 1990s with the collapse of the investment firm Long Term Capital Management. LTCM was started by Nobel Prize–winning economists, but when an unexpected Russian debt crisis caused the markets to move in ways not anticipated by its models, the firm lost 90 percent of its value in less than two months. The problem was so bad that the Fed had to step in to supervise the firm’s multibillion-dollar bailout. Fast forward a decade to the banking collapse of 2008, and we again see computer-driven trading funds plummet in the face of another unexpected event—the burst of the housing bubble.<span class="footnote" id="fwk-38086-fn11_036">P. Wahba, “Buffeted ‘Quants’ Are Still in Demand,” <em class="emphasis">Reuters</em>, December 22, 2008.</span></p>
+        <p class="para editable block" id="fwk-38086-ch11_s06_s02_p07">Data mining presents a host of other perils, as well. It’s possible to <span class="margin_term"><a class="glossterm">over-engineer</a><span class="glossdef">Build a model with so many variables that the solution arrived at might only work on the subset of data you’ve used to create it.</span></span> a model, building it with so many variables that the solution arrived at might only work on the subset of data you’ve used to create it. You might also be looking at a random but meaningless statistical fluke. In demonstrating how flukes occur, one quantitative investment manager uncovered a correlation that at first glance appeared statistically to be a particularly strong predictor for historical prices in the S&amp;P 500 stock index. That predictor? Butter production in Bangladesh.<span class="footnote" id="fwk-38086-fn11_037">P. Coy, “He Who Mines Data May Strike Fool’s Gold,” <em class="emphasis">BusinessWeek</em>, June 16, 1997.</span> Sometimes durable and useful patterns just aren’t in your data.</p>
+        <p class="para editable block" id="fwk-38086-ch11_s06_s02_p08">One way to test to see if you’re looking at a random occurrence in the numbers is to divide your data, building your model with one portion of the data, and using another portion to verify your results. This is the approach Netflix has used to test results achieved by teams in the Netflix Prize, the firm’s million-dollar contest for improving the predictive accuracy of its movie recommendation engine (see <a class="xref" href="fwk-38086-ch03#fwk-38086-ch03" xrefstyle="select: label">Chapter 4 "Netflix in Two Acts: The Making of an E-commerce Giant and the Uncertain Future of Atoms to Bits"</a>).</p>
+        <p class="para editable block" id="fwk-38086-ch11_s06_s02_p09">Finally, sometimes a pattern is uncovered but determining the best choice for a response is less clear. As an example, let’s return to the data-mining wizards at Tesco. An analysis of product sales data showed several money-losing products, including a type of bread known as “milk loaf.” Drop those products, right? Not so fast. Further analysis showed milk loaf was a “destination product” for a loyal group of high-value customers, and that these customers would shop elsewhere if milk loaf disappeared from Tesco shelves. The firm kept the bread as a loss-leader and retained those valuable milk loaf fans.<span class="footnote" id="fwk-38086-fn11_038">B. Helm, “Getting Inside the Customer’s Mind,” <em class="emphasis">BusinessWeek</em>, September 11, 2008.</span> Data miner, beware—first findings don’t always reveal an optimal course of action.</p>
+        <p class="para editable block" id="fwk-38086-ch11_s06_s02_p10">This last example underscores the importance of recruiting a data mining and business analytics team that possesses three critical skills: information technology (for understanding how to pull together data, and for selecting analysis tools), statistics (for building models and interpreting the strength and validity of results), and business knowledge (for helping set system goals, requirements, and offering deeper insight into what the data really says about the firm’s operating environment). Miss one of these key functions and your team could make some major mistakes.</p>
+        <p class="para editable block" id="fwk-38086-ch11_s06_s02_p11">While we’ve focused on tools in our discussion above, many experts suggest that business intelligence is really an organizational process as much as it is a set of technologies. Having the right team is critical in moving the firm from goal setting through execution and results.</p>
+        <div class="callout editable block" id="fwk-38086-ch11_s06_s02_n01">
+            <h3 class="title">Artificial Intelligence</h3>
+            <p class="para" id="fwk-38086-ch11_s06_s02_p12">Data mining has its roots in a branch of computer science known as artificial intelligence (or AI). The goal of AI is create computer programs that are able to mimic or improve upon functions of the human brain. Data mining can leverage <span class="margin_term"><a class="glossterm">neural networks</a><span class="glossdef">An AI system that examines data and hunts down and exposes patterns, in order to build models to exploit findings.</span></span> or other advanced algorithms and statistical techniques to hunt down and expose patterns, and build models to exploit findings.</p>
+            <p class="para" id="fwk-38086-ch11_s06_s02_p13"><span class="margin_term"><a class="glossterm">Expert systems</a><span class="glossdef">AI systems that leverages rules or examples to perform a task in a way that mimics applied human expertise.</span></span> are AI systems that leverage rules or examples to perform a task in a way that mimics applied human expertise. Expert systems are used in tasks ranging from medical diagnoses to product configuration.</p>
+            <p class="para" id="fwk-38086-ch11_s06_s02_p14"><span class="margin_term"><a class="glossterm">Genetic algorithms</a><span class="glossdef">Model building techniques where computers examine many potential solutions to a problem, iteratively modifying (mutating) various mathematical models, and comparing the mutated models to search for a best alternative.</span></span> are model building techniques where computers examine many potential solutions to a problem, iteratively modifying (mutating) various mathematical models, and comparing the mutated models to search for a best alternative. Genetic algorithms have been used to build everything from financial trading models to handling complex airport scheduling, to designing parts for the international space station.<span class="footnote" id="fwk-38086-fn11_039">Adapted from J. Kahn, “It’s Alive,” <em class="emphasis">Wired</em>, March 2002; O. Port, “Thinking Machines,” <em class="emphasis">BusinessWeek</em>, August 7, 2000; and L. McKay, “Decisions, Decisions,” <em class="emphasis">CRM Magazine</em>, May 1, 2009.</span></p>
+            <p class="para" id="fwk-38086-ch11_s06_s02_p15">While AI is not a single technology, and not directly related to data creation, various forms of AI can show up as part of analytics products, CRM tools, transaction processing systems, and other information systems.</p>
+        </div>
+        <div class="key_takeaways editable block" id="fwk-38086-ch11_s06_s02_n02">
+            <h3 class="title">Key Takeaways</h3>
+            <ul class="itemizedlist" id="fwk-38086-ch11_s06_s02_l02">
+                <li>Canned and ad hoc reports, digital dashboards, and OLAP are all used to transform data into information.</li>
+                <li>OLAP reporting leverage data cubes, which take data from standard relational databases, calculating and summarizing data for superfast reporting access. OLAP tools can present results through multidimensional graphs, or via spreadsheet-style cross-tab reports.</li>
+                <li>Modern data sets can be so large that it might be impossible for humans to spot underlying trends without the use of data mining tools.</li>
+                <li>Businesses are using data mining to address issues in several key areas including customer segmentation, marketing and promotion targeting, collaborative filtering, and so on.</li>
+                <li>Models influenced by bad data, missing or incomplete historical data, and over-engineering are prone to yield bad results.</li>
+                <li>One way to test to see if you’re looking at a random occurrence in your data is to divide your data, building your model with one portion of the data, and using another portion to verify your results.</li>
+                <li>Analytics may not always provide the total solution for a problem. Sometimes a pattern is uncovered, but determining the best choice for a response is less clear.</li>
+                <li>A competent business analytics team should possess three critical skills: information technology, statistics, and business knowledge.</li>
+            </ul>
+        </div>
+        <div class="exercises editable block" id="fwk-38086-ch11_s06_s02_n03">
+            <h3 class="title">Questions and Exercises</h3>
+            <ol class="orderedlist" id="fwk-38086-ch11_s06_s02_l03">
+                <li>What are some of the tools used to convert data into information?</li>
+                <li>What is the difference between a canned reports and an ad hoc reporting?</li>
+                <li>How do reports created by OLAP differ from most conventional reports?</li>
+                <li>List the key areas where businesses are leveraging data mining.</li>
+                <li>What is market basket analysis?</li>
+                <li>What is customer churn?</li>
+                <li>For data mining to work, what two critical data-related conditions must be present?</li>
+                <li>Discus occurrences of model failure caused by missing or incomplete historical data.</li>
+                <li>Discuss Tesco’s response to their discovery that “milk loaf” was a money-losing product.</li>
+                <li>List the three critical skills a competent business analytics team should possess.</li>
+                <li>Do any of the products that you use leverage artificial intelligence? What kinds of AI might be used in Netflix’s movie recommendation system, Apple’s iTunes Genius playlist builder, or Amazon’s Web site personalization? What kind of AI might help a physician make a diagnosis or help an engineer configure a complicated product in the field?</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s15-05-data-warehouses-and-data-marts.html"><img src="shared/images/batch-left.png"></a> <a href="s15-05-data-warehouses-and-data-marts.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s15-07-data-asset-in-action-technolog.html">Next Section</a> <a href="s15-07-data-asset-in-action-technolog.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

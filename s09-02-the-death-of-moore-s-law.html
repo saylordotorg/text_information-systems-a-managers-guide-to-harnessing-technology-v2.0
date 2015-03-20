@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>The Death of Moore’s Law?</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s09-01-introduction.html"><img src="shared/images/batch-left.png"></a> <a href="s09-01-introduction.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s09-03-bringing-brains-together-super.html">Next Section</a> <a href="s09-03-bringing-brains-together-super.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-38086-ch04_s02" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">5.2</span> The Death of Moore’s Law?</h2>
+    <div class="learning_objectives editable block" id="fwk-38086-ch04_s02_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-38086-ch04_s02_l01">
+            <li>Describe why Moore’s Law continues to advance and discuss the physical limitations of this advancement.</li>
+            <li>Name and describe various technologies that may extend the life of Moore’s Law.</li>
+            <li>Discuss the limitations of each of these approaches.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="fwk-38086-ch04_s02_p02">Moore simply observed that we’re getting better over time at squeezing more stuff into tinier spaces. Moore’s Law is possible because the distance between the pathways inside silicon chips gets smaller with each successive generation. While chip plants (semiconductor fabrication facilities, or <span class="margin_term"><a class="glossterm">fabs</a><span class="glossdef">Semiconductor fabrication facilities; the multibillion dollar plants used to manufacture semiconductors.</span></span>) are incredibly expensive to build, each new generation of fabs can crank out more chips per <span class="margin_term"><a class="glossterm">silicon wafer</a><span class="glossdef">A thin, circular slice of material used to create semiconductor devices. Hundreds of chips may be etched on a single wafer, where they are eventually cut out for individual packaging.</span></span>. And since the pathways are closer together, electrons travel shorter distances. If electronics now travel half the distance to make a calculation, that means the chip is twice as fast.</p>
+    <p class="para editable block" id="fwk-38086-ch04_s02_p03">But the shrinking can’t go on forever, and we’re already starting to see three interrelated forces—<em class="emphasis">size</em>, <em class="emphasis">heat</em>, and <em class="emphasis">power</em>—threatening to slow down Moore’s Law’s advance. When you make processors smaller, the more tightly packed electrons will heat up a chip—so much so that unless today’s most powerful chips are cooled down, they will melt inside their packaging. To keep the fastest computers cool, most PCs, laptops, and video game consoles need fans, and most corporate data centers have elaborate and expensive air conditioning and venting systems to prevent a meltdown. A trip through the Facebook data center during its recent rise would show that the firm was a “hot” start-up in more ways than one. The firm’s servers ran so hot that the Plexiglas sides of the firm’s server racks were warped and melting!<span class="footnote" id="fwk-38086-fn04_019">E. McGirt, “Hacker, Dropout, C.E.O.,” <em class="emphasis">Fast Company</em>, May 2007.</span> The need to cool modern data centers draws a lot of power and that costs a lot of money.</p>
+    <p class="para editable block" id="fwk-38086-ch04_s02_p04">The chief eco officer at Sun Microsystems has claimed that computers draw 4 to 5 percent of the world’s power. Google’s chief technology officer has said that the firm spends more to power its servers than the cost of the servers themselves.<span class="footnote" id="fwk-38086-fn04_020">D. Kirkpatrick, “The Greenest Computer Company under the Sun,” April 13, 2007.</span> Microsoft, Yahoo! and Google have all built massive data centers in the Pacific Northwest, away from their corporate headquarters, specifically choosing these locations for access to cheap hydroelectric power. Google’s location in The Dalles, Oregon, is charged a cost per kilowatt hour of two cents by the local power provider, less than one-fifth of the eleven-cent rate the firm pays in Silicon Valley.<span class="footnote" id="fwk-38086-fn04_021">S. Mehta, “Behold the Server Farm,” <em class="emphasis">Fortune</em>, August 1, 2006. Also see <a class="xref" href="fwk-38086-ch10#fwk-38086-ch10" xrefstyle="select: label">Chapter 10 "Software in Flux: Partly Cloudy and Sometimes Free"</a> in this book.</span> This difference means big savings for a firm that runs more than a million servers.</p>
+    <p class="para editable block" id="fwk-38086-ch04_s02_p05">And while these powerful shrinking chips are getting hotter and more costly to cool, it’s also important to realize that chips can’t get smaller forever. At some point Moore’s Law will run into the unyielding laws of nature. While we’re not certain where these limits are, chip pathways certainly can’t be shorter than a single molecule, and the actual physical limit is likely larger than that. Get too small and a phenomenon known as quantum tunneling kicks in, and electrons start to slide off their paths. Yikes!</p>
+    <div class="section" id="fwk-38086-ch04_s02_s01">
+        <h2 class="title editable block">Buying Time</h2>
+        <p class="para editable block" id="fwk-38086-ch04_s02_s01_p01">One way to overcome this problem is with <span class="margin_term"><a class="glossterm">multicore microprocessors</a><span class="glossdef">Microprocessors with two or more (typically lower power) calculating processor cores on the same piece of silicon.</span></span>, made by putting two or more lower power processor cores (think of a core as the calculating part of a microprocessor) on a single chip. Philip Emma, IBM’s Manager of Systems Technology and Microarchitecture, offers an analogy. Think of the traditional fast, hot, single-core processors as a three hundred-pound lineman, and a dual-core processor as two 160-pound guys. Says Emma, “A 300-pound lineman can generate a lot of power, but two 160-pound guys can do the same work with less overall effort.”<span class="footnote" id="fwk-38086-fn04_022">A. Ashton, “More Life for Moore’s Law,” <em class="emphasis">BusinessWeek</em>, June 20, 2005.</span> For many applications, the multicore chips will outperform a single speedy chip, while running cooler and drawing less power. Multicore processors are now mainstream.</p>
+        <p class="para editable block" id="fwk-38086-ch04_s02_s01_p02">Today, most PCs and laptops sold have at least a two-core (dual-core) processor. The Microsoft Xbox 360 has three cores. The PlayStation 3 includes the so-called <em class="emphasis">cell processor</em> developed by Sony, IBM, and Toshiba that runs nine cores. By 2010, Intel began shipping PC processors with eight cores, while AMD introduced a twelve-core chip. Intel has even demonstrated chips with upwards of fifty cores.</p>
+        <p class="para editable block" id="fwk-38086-ch04_s02_s01_p03">Multicore processors can run older software written for single-brain chips. But they usually do this by using only one core at a time. To reuse the metaphor above, this is like having one of our 160-pound workers lift away, while the other one stands around watching. Multicore operating systems can help achieve some performance gains. Versions of Windows or the Mac OS that are aware of multicore processors can assign one program to run on one core, while a second application is assigned to the next core. But in order to take full advantage of multicore chips, applications need to be rewritten to split up tasks so that smaller portions of a problem are executed simultaneously inside each core.</p>
+        <p class="para editable block" id="fwk-38086-ch04_s02_s01_p04">Writing code for this “divide and conquer” approach is not trivial. In fact, developing software for multicore systems is described by Shahrokh Daijavad, software lead for next-generation computing systems at IBM, as “one of the hardest things you learn in computer science.”<span class="footnote" id="fwk-38086-fn04_023">A. Ashton, “More Life for Moore’s Law,” <em class="emphasis">BusinessWeek</em>, June 20, 2005.</span> Microsoft’s chief research and strategy officer has called coding for these chips “the most conceptually different [change] in the history of modern computing.”<span class="footnote" id="fwk-38086-fn04_024">M. Copeland, “A Chip Too Far?” <em class="emphasis">Fortune</em>, September 1, 2008.</span> Despite this challenge, some of the most aggressive adaptors of multicore chips have been video game console manufacturers. Video game applications are particularly well-suited for multiple cores since, for example, one core might be used to render the background, another to draw objects, another for the “physics engine” that moves the objects around, and yet another to handle Internet communications for multiplayer games.</p>
+        <p class="para block">Another approach that’s breathing more life into Moore’s Law moves chips from being paper-flat devices to built-up 3-D affairs. By building up as well as out, firms are radically boosting speed and efficiency of chips. Intel has flipped upward the basic component of chips—the transistor. Transistors are the supertiny on-off switches in a chip that work collectively to calculate or store things in memory (a high-end microprocessor might include over two billion transistors). While you won’t notice that chips are much thicker, Intel says that on the miniscule scale of modern chip manufacturing, the new designs will be 37 percent faster and half as power hungry as conventional chips.<span class="footnote" id="fwk-38086-fn04_047">K. Bourzac, “How Three-Dimensional Transistors Went from Lab to Fab,” <em class="emphasis">Technology Review</em>, May 6, 2011.</span></p>
+        <div class="callout editable block" id="fwk-38086-ch04_s02_s01_n01">
+            <h3 class="title">Quantum Leaps, Chicken Feathers, and the Indium Gallium Arsenide Valley?</h3>
+            <p class="para" id="fwk-38086-ch04_s02_s01_p06">Think about it—the triple threat of size, heat, and power means that Moore’s Law, perhaps the greatest economic gravy train in history, will likely come to a grinding halt in your lifetime. Multicore and 3-D transistors are here today, but what else is happening to help stave off the death of Moore’s Law?</p>
+            <p class="para" id="fwk-38086-ch04_s02_s01_p07">Every once in a while a material breakthrough comes along that improves chip performance. A few years back researchers discovered that replacing a chip’s aluminum components with copper could increase speeds up to 30 percent, and Intel slipped exotic-sounding hafnium onto its silicon to improve power use. Now scientists are concentrating on improving the very semiconductor material that chips are made of. While the silicon used in chips is wonderfully abundant (it has pretty much the same chemistry found in sand), researchers are investigating other materials that might allow for chips with even tighter component densities. Researchers have demonstrated that chips made with supergeeky-sounding semiconductor materials such as indium gallium arsenide, germanium, and bismuth telluride can run faster and require less wattage than their silicon counterparts.<span class="footnote" id="fwk-38086-fn04_026">Y. L. Chen, J. G. Analytis, J.-H. Chu, Z. K. Liu, S.-K. Mo, X. L. Qi, H. J. Zhang, et al., “Experimental Realization of a Three-Dimensional Topological Insulator, Bi<sub class="subscript">2</sub>Te<sub class="subscript">3</sub>,” <em class="emphasis">Science</em> 325, no. 5937 (July 10, 2009): 178—81; K. Greene, “Intel Looks Beyond Silicon,” <em class="emphasis">Technology Review</em>, December 11, 2007; and A. Cane, “A Valley By Any Other Name…” <em class="emphasis">Financial Times</em>, December 11, 2006.</span> Perhaps even more exotic (and downright bizarre), researchers at the University of Delaware have experimented with a faster-than-silicon material derived from chicken feathers! Hyperefficient chips of the future may also be made out of carbon nanotubes, once the technology to assemble the tiny structures becomes commercially viable.</p>
+            <p class="para" id="fwk-38086-ch04_s02_s01_p08">Other designs move away from electricity over silicon. Optical computing, where signals are sent via light rather than electricity, promises to be faster than conventional chips, if lasers can be mass produced in miniature (silicon laser experiments show promise). Others are experimenting by crafting computing components using biological material (think a DNA-based storage device).</p>
+            <p class="para" id="fwk-38086-ch04_s02_s01_p09">One yet-to-be-proven technology that could blow the lid off what’s possible today is quantum computing. Conventional computing stores data as a combination of bits, where a bit is either a one or a zero. Quantum computers, leveraging principles of quantum physics, employ qubits that can be both one <em class="emphasis">and</em> zero at the same time. Add a bit to a conventional computer’s memory and you double its capacity. Add a bit to a quantum computer and its capacity increases exponentially. For comparison, consider that a computer model of serotonin, a molecule vital to regulating the human central nervous system, would require 10<sup class="superscript">94</sup> bytes of information. Unfortunately there’s not enough matter in the universe to build a computer that big. But modeling a serotonin molecule using quantum computing would take just 424 qubits.<span class="footnote" id="fwk-38086-fn04_027">P. Kaihla, “Quantum Leap,” <em class="emphasis">Business 2.0</em>, August 1, 2004.</span></p>
+            <p class="para" id="fwk-38086-ch04_s02_s01_p10">Some speculate that quantum computers could one day allow pharmaceutical companies to create hyperdetailed representations of the human body that reveal drug side effects before they’re even tested on humans. Quantum computing might also accurately predict the weather months in advance or offer unbreakable computer security. Ever have trouble placing a name with a face? A quantum computer linked to a camera (in your sunglasses, for example) could recognize the faces of anyone you’ve met and give you a heads-up to their name and background.<span class="footnote" id="fwk-38086-fn04_028">P. Schwartz, C. Taylor, and R. Koselka, “The Future of Computing: Quantum Leap,” <em class="emphasis">Fortune</em>, August 2, 2006.</span> Opportunities abound. Of course, before quantum computing can be commercialized, researchers need to harness the freaky properties of quantum physics wherein your answer may reside in another universe, or could disappear if observed (Einstein himself referred to certain behaviors in quantum physics as “spooky action at a distance”).</p>
+            <p class="para" id="fwk-38086-ch04_s02_s01_p11">Pioneers in quantum computing include IBM, HP, NEC, and a Canadian start-up named D-Wave. If or when quantum computing becomes a reality is still unknown, but the promise exists that while Moore’s Law may run into limits imposed by Mother Nature, a new way of computing may blow past anything we can do with silicon, continuing to make possible the once impossible.</p>
+        </div>
+        <div class="key_takeaways editable block" id="fwk-38086-ch04_s02_s01_n02">
+            <h3 class="title">Key Takeaways</h3>
+            <ul class="itemizedlist" id="fwk-38086-ch04_s02_s01_l01">
+                <li>As chips get smaller and more powerful, they get hotter and present power-management challenges. And at some, point Moore’s Law will stop because we will no longer be able to shrink the spaces between components on a chip.</li>
+                <li>Multicore chips use two or more low-power calculating “cores” to work together in unison, but to take optimal advantage of multicore chips, software must be rewritten to “divide” a task among multiple cores.</li>
+                <li>3-D transistors are also helping extend Moore’s Law by producing chips that require less power and run faster.</li>
+                <li>New materials may extend the life of Moore’s Law, allowing chips to get smaller, still. Entirely new methods for calculating, such as quantum computing, may also dramatically increase computing capabilities far beyond what is available today.</li>
+            </ul>
+        </div>
+        <div class="exercises editable block" id="fwk-38086-ch04_s02_s01_n03">
+            <h3 class="title">Questions and Exercises</h3>
+            <ol class="orderedlist" id="fwk-38086-ch04_s02_s01_l02">
+                <li>What three interrelated forces threaten to slow the advancement of Moore’s Law?</li>
+                <li>Which commercial solutions, described in the section above, are currently being used to counteract the forces mentioned above? How do these solutions work? What are the limitations of each?</li>
+                <li>Will multicore chips run software designed for single-core processors?</li>
+                <li>As chips grow smaller they generate increasing amounts of heat that needs to be dissipated. Why is keeping systems cool such a challenge? What are the implications for a firm like Yahoo! or Google? For a firm like Apple or Dell?</li>
+                <li>What are some of the materials that may replace the silicon that current chips are made of?</li>
+                <li>What kinds of problems might be solved if the promise of quantum computing is achieved? How might individuals and organizations leverage quantum computing? What sorts of challenges could arise from the widespread availability of such powerful computing technology?</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s09-01-introduction.html"><img src="shared/images/batch-left.png"></a> <a href="s09-01-introduction.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s09-03-bringing-brains-together-super.html">Next Section</a> <a href="s09-03-bringing-brains-together-super.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

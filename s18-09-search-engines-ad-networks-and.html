@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Search Engines, Ad Networks, and Fraud</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s18-08-profiling-and-privacy.html"><img src="shared/images/batch-left.png"></a> <a href="s18-08-profiling-and-privacy.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s18-10-the-battle-unfolds.html">Next Section</a> <a href="s18-10-the-battle-unfolds.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-38086-ch08_s09" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">14.9</span> Search Engines, Ad Networks, and Fraud</h2>
+    <div class="learning_objectives editable block" id="fwk-38086-ch08_s09_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-38086-ch08_s09_l01">
+            <li>Be able to identify various types of online fraud, as well as the techniques and technologies used to perpetrate these crimes.</li>
+            <li>Understand how firms can detect, prevent, and prosecute fraudsters.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="fwk-38086-ch08_s09_p02">There’s a lot of money to be made online, and this has drawn the attention of criminals and the nefarious. Online fraudsters may attempt to steal from advertisers, harm rivals, or otherwise dishonestly game the system. But bad guys beware—such attempts violate terms-of-service agreements and may lead to prosecution and jail time.</p>
+    <p class="para editable block" id="fwk-38086-ch08_s09_p03">Studying ad-related fraud helps marketers, managers, and technologists understand potential vulnerabilities, as well as the methods used to combat them. This process also builds tech-centric critical thinking, valuation, and risk assessment skills.</p>
+    <p class="para editable block" id="fwk-38086-ch08_s09_p04">Some of the more common types of fraud that are attempted in online advertising include the following:</p>
+    <ul class="itemizedlist editable block" id="fwk-38086-ch08_s09_l02">
+        <li>
+<em class="emphasis">Enriching</em> <span class="margin_term"><a class="glossterm">click fraud</a><span class="glossdef">Generating bogus clicks, either for financial gain (enriching fraud), or to attack rivals by draining their online ad budget (depleting fraud).</span></span>—when site operators generate bogus ad clicks to earn PPC income.</li>
+        <li>
+<em class="emphasis">Enriching impression fraud</em>—when site operators generate false page views (and hence ad impressions) in order to boost their site’s CPM earnings.</li>
+        <li>
+<em class="emphasis">Depleting click fraud</em>—clicking a rival’s ads to exhaust their PPC advertising budget.</li>
+        <li>
+<em class="emphasis">Depleting impression fraud</em>—generating bogus impressions to exhaust a rival’s CPM ad budget.</li>
+        <li>
+<em class="emphasis">Rank-based impression fraud</em>—on-sites where ad rank is based on click performance, fraudsters repeatedly search keywords linked to rival ads or access pages where rival ads appear. The goal is to generate impressions without clicks. This process lowers the performance rank (quality score) of a rival’s ads, possibly dropping ads from rank results, and allowing fraudsters to subsequently bid less for the advertising slots previously occupied by rivals.</li>
+        <li>
+<em class="emphasis">Disbarring fraud</em>—attempting to frame a rival by generating bogus clicks or impressions that appear to be associated with the rival, in hopes that this rival will be banned from an ad network or punished in search engine listings.</li>
+        <li>
+<em class="emphasis">Link fraud (also known as spamdexing or link farming)</em>—creating a series of bogus Web sites, all linking back to a page, in hopes of increasing that page’s results in organic search.</li>
+        <li>
+<em class="emphasis">Keyword stuffing</em>—packing a Web site with unrelated keywords (sometimes hidden in fonts that are the same color as a Web site’s background) in hopes of either luring users who wouldn’t normally visit a Web site, or attracting higher-value contextual ads.</li>
+    </ul>
+    <p class="para editable block" id="fwk-38086-ch08_s09_p05">Disturbing stuff, but firms are after the bad guys and they’ve put their best geeks on the case. Widespread fraud would tank advertiser ROI and crater the online advertising market, so Google and rivals are diligently working to uncover and prosecute the crooks.</p>
+    <div class="section" id="fwk-38086-ch08_s09_s01">
+        <h2 class="title editable block">Busting the Bad Guys</h2>
+        <p class="para editable block" id="fwk-38086-ch08_s09_s01_p01">On the surface, enriching click fraud seems the easiest to exploit. Just set up a Web site, run PPC ads on the page, and click like crazy. Each click should ring the ad network cash register, and a portion of those funds will be passed on to the perpetrating site owner—<em class="emphasis">ka ching</em>! But remember, each visitor is identified by an IP address, so lots of clicks from a single IP make the bad guys easy to spot.</p>
+        <p class="para editable block" id="fwk-38086-ch08_s09_s01_p02">So organized crime tried to raise the bar, running so-called <span class="margin_term"><a class="glossterm">click farms</a><span class="glossdef">Recruiting a network of users to engage in click fraud with the goal of spreading IP addresses across several systems and make a fraud effort more difficult to detect.</span></span> to spread fraud across dozens of IP addresses. <em class="emphasis">The Times of India</em> uncovered one such effort where Indian housewives were receiving up to twenty-five cents for each ad click made on fraudster-run Web sites.<span class="footnote" id="fwk-38086-fn08_054">N. Vidyasagar, “India’s Secret Army of Online Ad ‘Clickers,’” <em class="emphasis">Times of India</em>, May 3, 2004.</span> But an unusually large number of clicks detected as coming from Indian IP addresses foiled these schemes as well.</p>
+        <p class="para editable block" id="fwk-38086-ch08_s09_s01_p03">Fraudsters then moved on to use <span class="margin_term"><a class="glossterm">zombie networks</a><span class="glossdef">Sometimes called “clickbots” or “botnets,” these are hordes of surreptitiously infiltrated computers, linked and controlled remotely. This technique is used to perpetrate click fraud, as well as a variety of other computer security crimes.</span></span>—hordes of surreptitiously infiltrated computers, linked and controlled by rogue software.<span class="footnote" id="fwk-38086-fn08_055">C. Mann, “How Click Fraud Could Swallow the Internet,” <em class="emphasis">Wired</em>, January 2006.</span> To create zombie networks (sometimes called <em class="emphasis">botnets</em>), hackers exploit security holes, spread viruses, or use so-called phishing techniques to trick users into installing software that will lie dormant, awaiting commands from a central location. The controlling machine then sends out tasks for each zombie, instructing them to visit Web sites and click on ads in a way that mimics real traffic. Zombie botnets can be massive. Dutch authorities once took down a gang that controlled some 1.5 million machines.<span class="footnote" id="fwk-38086-fn08_056">T. Sanders, “Dutch Botnet Gang Facing Jail,” <em class="emphasis">IT News Australia</em>, January 18, 2007; and N. Daswani and M. Stoppleman, “The Anatomy of Clickbot” (paper, Proceedings of the First Conference on First Workshop on Hot Topics in Understanding Botnets, Cambridge, MA, April 11–13, 2007).</span></p>
+        <p class="para editable block" id="fwk-38086-ch08_s09_s01_p04">Scary, but this is where scale, expertise, and experience come in. The more activity an ad network can monitor, the greater the chance that it can uncover patterns that are anomalous. Higher click-through rates than comparable sites? Caught. Too many visits to a new or obscure site? Caught. Clicks that don’t fit standard surfing patterns for geography, time, and day? Caught.</p>
+        <p class="para editable block" id="fwk-38086-ch08_s09_s01_p05">Sometimes the goal isn’t theft, but sabotage. Google’s Ad Traffic Quality Team backtracked through unusual patterns to uncover a protest effort targeted at Japanese credit card firms. Ad clicks were eventually traced to an incendiary blogger who incited readers to search for the Japanese word <em class="emphasis">kiyashinku</em> (meaning cashing credit, or credit cards), and to click the credit card firm ads that show up, depleting firm search marketing budgets. Sneaky, but uncovered and shut down, without harm to the advertisers.<span class="footnote" id="fwk-38086-fn08_057">M. Jakobsson and Z. Ramzan, <em class="emphasis">Crimeware: Understanding New Attacks and Defenses</em> (Cupertino, CA: Symantec Press, 2008).</span></p>
+        <p class="para editable block" id="fwk-38086-ch08_s09_s01_p06">Search firm and ad network software can use data patterns and other signals to ferret out most other types of fraud, too, including rank-based impression fraud, spamdexing, and keyword stuffing. While many have tried to up the stakes with increasingly sophisticated attacks, large ad networks have worked to match them, increasing their anomaly detection capabilities across all types of fraud.<span class="footnote" id="fwk-38086-fn08_058">M. Jakobsson and Z. Ramzan, <em class="emphasis">Crimeware: Understanding New Attacks and Defenses</em> (Cupertino, CA: Symantec Press, 2008).</span> Here we see another scale and data-based advantage for Google. Since the firm serves more search results and advertisements than its rivals do, it has vastly more information on online activity. And if it knows more about what’s happening online than any other firm, it’s likely to be first to shut down anyone who tries to take advantage of the system.</p>
+        <div class="callout editable block" id="fwk-38086-ch08_s09_s01_n01">
+            <h3 class="title">Click Fraud: How Bad Is It?</h3>
+            <p class="para" id="fwk-38086-ch08_s09_s01_p07">Accounts on the actual rate of click fraud vary widely. Some third-party firms contend that nearly one in five clicks is fraudulent.<span class="footnote" id="fwk-38086-fn08_059">S. Hamner, “Pay-per-Click Advertisers Combat Costly Fraud,” <em class="emphasis">New York Times</em>, May 12, 2009.</span> But Google adamantly disputes these headline-grabbing numbers, claiming that many such reports are based on-site logs that reflect false data from conditions that Google doesn’t charge for (e.g., double counting a double click, or adding up repeated use of the browser back button in a way that looks like multiple clicks have occurred). The firm also offers monitoring, analytics, and reporting tools that can uncover this kind of misperceived discrepancy.</p>
+            <p class="para" id="fwk-38086-ch08_s09_s01_p08">Google contends that all invalid clicks (mistakes and fraud) represent less than 10 percent of all clicks, that the vast majority of these clicks are filtered out, and that Google doesn’t charge advertisers for clicks flagged as mistakes or suspicious.<span class="footnote" id="fwk-38086-fn08_060">M. Lafsky, “Google and Click Fraud: Behind the Numbers,” <em class="emphasis">New York Times</em>, February 27, 2008.</span> In fact, Google says their screening bar is so high and so accurate that less than 0.02 percent of clicks are reactively classified as invalid and credited back to advertisers.<span class="footnote" id="fwk-38086-fn08_061">M. Jakobsson and Z. Ramzan, <em class="emphasis">Crimeware: Understanding New Attacks and Defenses</em> (Cupertino, CA: Symantec Press, 2008).</span></p>
+            <p class="para" id="fwk-38086-ch08_s09_s01_p09">So who’s right? While it’s impossible to identify the intention behind every click, the market ultimately pays for performance. And advertisers are continuing to flock to PPC ad networks (and to Google in particular). While that doesn’t mean that firms can stop being vigilant, it does suggest that for most firms, Google seems to have the problem under control.</p>
+        </div>
+        <div class="key_takeaways editable block" id="fwk-38086-ch08_s09_s01_n02">
+            <h3 class="title">Key Takeaways</h3>
+            <ul class="itemizedlist" id="fwk-38086-ch08_s09_s01_l01">
+                <li>Fraud can undermine the revenue model behind search engines, ad networks, and the ad-based Internet. It also threatens honest competition among rivals that advertise online.</li>
+                <li>There are many forms of online fraud, including enriching fraud (meant to line the pockets of the perpetrators), depleting fraud (meant to waste the ad budgets of rivals), disbarring fraud (meant to frame the innocent as fraudsters), and methods to lower rival ad rank performance, or gain search engine ranking algorithms.</li>
+                <li>While fraudsters have devised ingenious ways to exploit the system (including click farms and zombie attacks), IP addresses and detailed usage pattern monitoring increasingly reveal bogus activity.</li>
+                <li>Fraud rates are widely disputed. However, it is clear that if widespread fraud were allowed to occur, advertisers would see lower ROI from online ad efforts, and Internet business models would suffer. The continued strength of the online advertising market suggests that while fraud may be impossible to stop completely, most fraud is under control.</li>
+            </ul>
+        </div>
+        <div class="exercises editable block" id="fwk-38086-ch08_s09_s01_n03">
+            <h3 class="title">Questions and Exercises</h3>
+            <ol class="orderedlist" id="fwk-38086-ch08_s09_s01_l02">
+                <li>Why is it difficult for an unscrupulous individual to pull off enriching click fraud simply by setting up a Web site, running ad network ads, and clicking?</li>
+                <li>Why did hackers develop zombie networks? What advantage do they offer the criminals? How are they detected? Why do larger ad networks have an advantage in click fraud detection?</li>
+                <li>How can you prevent zombies from inhabiting your computers? Are you reasonably confident you are “zombie-free?” Why or why not?</li>
+                <li>What are spamdexing and keyword stuffing? What risks does a legitimate business run if it engages in these practices, and if they are discovered by search engines? What would this mean for the career of the manager who thought he could game the system?</li>
+                <li>Which types of fraud can be attempted against search advertising? Which are perpetrated over its ad network?</li>
+                <li>What are the consequences if click fraud were allowed to continue? Does this ultimately help or hurt firms that run ad networks? Why?</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s18-08-profiling-and-privacy.html"><img src="shared/images/batch-left.png"></a> <a href="s18-08-profiling-and-privacy.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s18-10-the-battle-unfolds.html">Next Section</a> <a href="s18-10-the-battle-unfolds.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

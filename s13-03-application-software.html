@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Application Software</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s13-02-operating-systems.html"><img src="shared/images/batch-left.png"></a> <a href="s13-02-operating-systems.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s13-04-distributed-computing.html">Next Section</a> <a href="s13-04-distributed-computing.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-38086-ch09_s03" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">9.3</span> Application Software</h2>
+    <div class="learning_objectives editable block" id="fwk-38086-ch09_s03_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-38086-ch09_s03_l01">
+            <li>Appreciate the difference between desktop and enterprise software.</li>
+            <li>List the categories of enterprise software.</li>
+            <li>Understand what an ERP (enterprise resource planning) software package is.</li>
+            <li>Recognize the relationship of the DBMS (database system) to the other enterprise software systems.</li>
+            <li>Recognize both the risks and rewards of installing packaged enterprise systems.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="fwk-38086-ch09_s03_p02">Operating systems are designed to create a <span class="margin_term"><a class="glossterm">platform</a><span class="glossdef">Products and services that allow for the development and integration of software products and other complementary goods. Windows, the iPhone, the Wii, and the standards that allow users to create Facebook apps are all platforms.</span></span> so that programmers can write additional applications, allowing the computer to do even more useful things. While operating systems control the hardware, <em class="emphasis">application software</em> (sometimes referred to as <em class="emphasis">software applications</em>, <em class="emphasis">applications</em>, or even just <em class="emphasis">apps</em>) perform the work that users and firms are directly interested in accomplishing. Think of applications as the place where the users or organization’s real work gets done. As we learned in <a class="xref" href="fwk-38086-ch05#fwk-38086-ch05" xrefstyle="select: label">Chapter 6 "Understanding Network Effects"</a>, the more application software that is available for a platform (the more games for a video game console, the more apps for your phone), the more valuable it potentially becomes.</p>
+    <p class="para editable block" id="fwk-38086-ch09_s03_p03"><span class="margin_term"><a class="glossterm">Desktop software</a><span class="glossdef">Applications installed on a personal computer, typically supporting tasks performed by a single user.</span></span> refers to applications installed on a personal computer—your browser, your Office suite (e.g., word processor, spreadsheet, presentation software), photo editors, and computer games are all desktop software. <span class="margin_term"><a class="glossterm">Enterprise software</a><span class="glossdef">Applications that address the needs of multiple users throughout an organization or work group.</span></span> refers to applications that address the needs of multiple, simultaneous users in an organization or work group. Most companies run various forms of enterprise software programs to keep track of their inventory, record sales, manage payments to suppliers, cut employee paychecks, and handle other functions.</p>
+    <p class="para editable block" id="fwk-38086-ch09_s03_p04">Some firms write their own enterprise software from scratch, but this can be time consuming and costly. Since many firms have similar procedures for accounting, finance, inventory management, and human resource functions, it often makes sense to buy a <span class="margin_term"><a class="glossterm">software package</a><span class="glossdef">A software product offered commercially by a third party.</span></span> (a software product offered commercially by a third party) to support some of these functions. So-called <span class="margin_term"><a class="glossterm">enterprise resource planning (ERP)</a><span class="glossdef">A software package that integrates the many functions (accounting, finance, inventory management, human resources, etc.) of a business.</span></span> software packages serve precisely this purpose. In the way that Microsoft can sell you a suite of desktop software programs that work together, many companies sell ERP software that coordinates and integrates many of the functions of a business. The leading ERP vendors include the firm’s SAP and Oracle, although there are many firms that sell ERP software. A company doesn’t have to install all of the modules of an ERP suite, but it might add functions over time—for example, to plug in an accounting program that is able to read data from the firm’s previously installed inventory management system. And although a bit more of a challenge to integrate, a firm can also mix and match components, linking software the firm has written with modules purchased from different enterprise software vendors.</p>
+    <div class="figure large editable block" id="fwk-38086-ch09_s03_f01">
+        <p class="title"><span class="title-prefix">Figure 9.4</span> ERP in Action<span class="footnote" id="fwk-38086-fn09_004">Adapted from G. Edmondson, “Silicon Valley on the Rhine,” <em class="emphasis">BusinessWeek International</em>, November 3, 1997.</span></p>
+        <img src="section_13/18131acd5f17d4163ef535daa30864ce.jpg">
+    </div>
+    <p class="para editable block" id="fwk-38086-ch09_s03_p05">An ERP system with multiple modules installed can touch many functions of the business:</p>
+    <ul class="itemizedlist editable block" id="fwk-38086-ch09_s03_l02">
+        <li>
+<em class="emphasis">Sales</em>—A sales rep from Vermont-based SnowboardCo. takes an order for five thousand boards from a French sporting goods chain. The system can verify credit history, apply discounts, calculate price (in euros), and print the order in French.</li>
+        <li>
+<em class="emphasis">Inventory</em>—While the sales rep is on the phone with his French customer, the system immediately checks product availability, signaling that one thousand boards are ready to be shipped from the firm’s Burlington warehouse, the other four thousand need to be manufactured and can be delivered in two weeks from the firm’s manufacturing facility in Guangzhou.</li>
+        <li>
+<em class="emphasis">Manufacturing</em>—When the customer confirms the order, the system notifies the Guangzhou factory to ramp up production for the model ordered.</li>
+        <li>
+<em class="emphasis">Human Resources</em>—High demand across this week’s orders triggers a notice to the Guangzhou hiring manager, notifying her that the firm’s products are a hit and that the flood of orders coming in globally mean her factory will have to hire five more workers to keep up.</li>
+        <li>
+<em class="emphasis">Purchasing</em>—The system keeps track of raw material inventories, too. New orders trigger an automatic order with SnowboardCo.’s suppliers, so that raw materials are on hand to meet demand.</li>
+        <li>
+<em class="emphasis">Order Tracking</em>—The French customer can log in to track her SnowboardCo. order. The system shows her other products that are available, using this as an opportunity to cross-sell additional products.</li>
+        <li>
+<em class="emphasis">Decision Support</em>—Management sees the firm’s European business is booming and plans a marketing blitz for the continent, targeting board models and styles that seem to sell better for the Alps crowd than in the U.S. market.</li>
+    </ul>
+    <p class="para editable block" id="fwk-38086-ch09_s03_p06">Other categories of enterprise software that managers are likely to encounter include the following:</p>
+    <ul class="itemizedlist editable block" id="fwk-38086-ch09_s03_l03">
+        <li>
+<span class="margin_term"><a class="glossterm">customer relationship management (CRM)</a><span class="glossdef">Systems used to support customer-related sales and marketing activities.</span></span> systems used to support customer-related sales and marketing activities</li>
+        <li>
+<span class="margin_term"><a class="glossterm">supply chain management (SCM)</a><span class="glossdef">Systems that can help a firm manage aspects of its value chain, from the flow of raw materials into the firm, through delivery of finished products and services at the point-of-consumption.</span></span> systems that can help a firm manage aspects of its value chain, from the flow of raw materials into the firm through delivery of finished products and services at the point-of-consumption</li>
+        <li>
+<span class="margin_term"><a class="glossterm">business intelligence (BI) systems</a><span class="glossdef">Systems that use data created by other systems to provide reporting and analysis for organizational decision making.</span></span>, which use data created by other systems to provide reporting and analysis for organizational decision making</li>
+    </ul>
+    <p class="para editable block" id="fwk-38086-ch09_s03_p07">Major ERP vendors are now providing products that extend into these and other categories of enterprise application software, as well.</p>
+    <p class="para editable block" id="fwk-38086-ch09_s03_p08">Most enterprise software works in conjunction with a <span class="margin_term"><a class="glossterm">database management system (DBMS)</a><span class="glossdef">Sometimes referred to as database software; software for creating, maintaining, and manipulating data.</span></span>, sometimes referred to as a “database system.” The database system stores and retrieves the data that an application creates and uses. Think of this as another additional layer in our cake analogy. Although the DBMS is itself considered an application, it’s often useful to think of a firm’s database systems as sitting above the operating system, but under the enterprise applications. Many ERP systems and enterprise software programs are configured to share the same database system so that an organization’s different programs can use a common, shared set of data. This system can be hugely valuable for a company’s efficiency. For example, this could allow a separate set of programs that manage an inventory and point-of-sale system to update a single set of data that tells how many products a firm has to sell and how many it has already sold—information that would also be used by the firm’s accounting and finance systems to create reports showing the firm’s sales and profits.</p>
+    <p class="para editable block" id="fwk-38086-ch09_s03_p09">Firms that don’t have common database systems with consistent formats across their enterprise often struggle to efficiently manage their value chain. Common procedures and data formats created by packaged ERP systems and other categories of enterprise software also make it easier for firms to use software to coordinate programs between organizations. This coordination can lead to even more value chain efficiencies. Sell a product? Deduct it from your inventory. When inventory levels get too low, have your computer systems send a message to your supplier’s systems so that they can automatically build and ship replacement product to your firm. In many cases these messages are sent without any human interaction, reducing time and errors. And common database systems also facilitate the use of BI systems that provide critical operational and competitive knowledge and empower decision making. For more on CRM and BI systems, and the empowering role of data, see <a class="xref" href="fwk-38086-ch11#fwk-38086-ch11" xrefstyle="select: label">Chapter 11 "The Data Asset: Databases, Business Intelligence, and Competitive Advantage"</a>.</p>
+    <div class="figure large editable block" id="fwk-38086-ch09_s03_f02">
+        <p class="title"><span class="title-prefix">Figure 9.5</span> </p>
+        <img src="section_13/6382a0df8346cc311d73c79a60627acd.jpg">
+        <p class="para">An organization’s database management system can be set up to work with several applications both within and outside the firm.</p>
+    </div>
+    <div class="callout editable block" id="fwk-38086-ch09_s03_n02">
+        <h3 class="title">The Rewards and Risks of Packaged Enterprise Systems</h3>
+        <p class="para" id="fwk-38086-ch09_s03_p10">When set up properly, enterprise systems can save millions of dollars and turbocharge organizations. For example, the CIO of office equipment maker Steelcase credited the firm’s ERP with an eighty-million-dollar reduction in operating expenses saved from eliminating redundant processes and making data more usable. The CIO of Colgate Palmolive also praised their ERP, saying, “The day we turned the switch on, we dropped two days out of our order-to-delivery cycle.”<span class="footnote" id="fwk-38086-fn09_005">A. Robinson and D. Dilts, “OR and ERP,” <em class="emphasis">ORMS Today</em>, June 1999.</span> Packaged enterprise systems can streamline processes, make data more usable, and ease the linking of systems with software across the firm and with key business partners. Plus, the software that makes up these systems is often debugged, tested, and documented with an industrial rigor that may be difficult to match with proprietary software developed in-house.</p>
+        <p class="para" id="fwk-38086-ch09_s03_p11">But for all the promise of packaged solutions for standard business functions, enterprise software installations have proven difficult. Standardizing business processes in software that others can buy means that those functions are easy for competitors to match, and the vision of a single monolithic system that delivers up wondrous efficiencies has been difficult for many to achieve. The average large company spends roughly $15 million on ERP software, with some installations running into the hundreds of millions of dollars.<span class="footnote" id="fwk-38086-fn09_006">C. Rettig, “The Trouble with Enterprise Software,” <em class="emphasis">MIT Sloan Management Review</em> 49, no. 1 (2007): 21–27.</span> And many of these efforts have failed disastrously.</p>
+        <p class="para" id="fwk-38086-ch09_s03_p12">FoxMeyer was once a six-billion-dollar drug distributor, but a failed ERP installation led to a series of losses that bankrupted the firm. The collapse was so rapid and so complete that just a year after launching the system, the carcass of what remained of the firm was sold to a rival for less than $80 million. Hershey Foods blamed a $466 million revenue shortfall on glitches in the firm’s ERP rollout. Among the problems, the botched implementation prevented the candy maker from getting product to stores during the critical period before Halloween. Nike’s first SCM and ERP implementation was labeled a “disaster”; their systems were blamed for over $100 million in lost sales.<span class="footnote" id="fwk-38086-fn09_007">C. Koch, “Nike Rebounds: How (and Why) Nike Recovered from Its Supply Chain Disaster,” <em class="emphasis">CIO</em>, June 15, 2004.</span> Even tech firms aren’t immune to software implementation blunders. HP once blamed a $160 million loss on problems with its ERP systems.<span class="footnote" id="fwk-38086-fn09_008">R. Charette, “Why Software Fails,” <em class="emphasis">IEEE Spectrum</em>, September 2005.</span> Manager beware—there are no silver bullets. For insight on the causes of massive software failures, and methods to improve the likelihood of success, see <a class="xref" href="fwk-38086-ch09_s06#fwk-38086-ch09_s06" xrefstyle="select: label">Section 9.6 "Understanding Technology beyond the Price Tag: Total Cost of Ownership (TCO) and the Cost of Tech Failure"</a>.</p>
+    </div>
+    <div class="key_takeaways editable block" id="fwk-38086-ch09_s03_n03">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="fwk-38086-ch09_s03_l04">
+            <li>Application software focuses on the work of a user or an organization.</li>
+            <li>Desktop applications are typically designed for a single user. Enterprise software supports multiple users in an organization or work group.</li>
+            <li>Popular categories of enterprise software include ERP (enterprise resource planning), SCM (supply chain management), CRM (customer relationship management), and BI (business intelligence) software, among many others.</li>
+            <li>These systems are used in conjunction with database management systems, programs that help firms organize, store, retrieve, and maintain data.</li>
+            <li>ERP and other packaged enterprise systems can be challenging and costly to implement, but can help firms create a standard set of procedures and data that can ultimately lower costs and streamline operations.</li>
+            <li>The more application software that is available for a platform, the more valuable that platform becomes.</li>
+            <li>The DBMS stores and retrieves the data used by the other enterprise applications. Different enterprise systems can be configured to share the same database system in order share common data.</li>
+            <li>Firms that don’t have common database systems with consistent formats across their enterprise often struggle to efficiently manage their value chain, and often lack the flexibility to introduce new ways of doing business. Firms with common database systems and standards often benefit from increased organizational insight and decision-making capabilities.</li>
+            <li>Enterprise systems can cost millions of dollars in software, hardware, development, and consulting fees, and many firms have failed when attempting large-scale enterprise system integration. Simply buying a system does not guarantee its effective deployment and use.</li>
+            <li>When set up properly, enterprise systems can save millions of dollars and turbocharge organizations by streamlining processes, making data more usable, and easing the linking of systems with software across the firm and with key business partners.</li>
+        </ul>
+    </div>
+    <div class="exercises editable block" id="fwk-38086-ch09_s03_n04">
+        <h3 class="title">Questions and Exercises</h3>
+        <ol class="orderedlist" id="fwk-38086-ch09_s03_l05">
+            <li>What is the difference between desktop and enterprise software?</li>
+            <li>Who are the two leading ERP vendors?</li>
+            <li>List the functions of a business that might be impacted by an ERP.</li>
+            <li>What do the acronyms ERP, CRM, SCM, and BI stand for? Briefly describe what each of these enterprise systems does.</li>
+            <li>Where in the “layer cake” analogy does the DBMS lie.</li>
+            <li>Name two companies that have realized multimillion-dollar benefits as result of installing enterprise systems.</li>
+            <li>Name two companies that have suffered multimillion-dollar disasters as result of failed enterprise system installations.</li>
+            <li>How much does the average large company spend annually on ERP software?</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s13-02-operating-systems.html"><img src="shared/images/batch-left.png"></a> <a href="s13-02-operating-systems.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s13-04-distributed-computing.html">Next Section</a> <a href="s13-04-distributed-computing.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

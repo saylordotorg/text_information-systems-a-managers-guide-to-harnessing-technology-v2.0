@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Data Warehouses and Data Marts</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s15-04-data-rich-information-poor.html"><img src="shared/images/batch-left.png"></a> <a href="s15-04-data-rich-information-poor.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s15-06-the-business-intelligence-tool.html">Next Section</a> <a href="s15-06-the-business-intelligence-tool.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-38086-ch11_s05" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">11.5</span> Data Warehouses and Data Marts</h2>
+    <div class="learning_objectives editable block" id="fwk-38086-ch11_s05_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="fwk-38086-ch11_s05_l01">
+            <li>Understand what data warehouses and data marts are and the purpose they serve.</li>
+            <li>Know the issues that need to be addressed in order to design, develop, deploy, and maintain data warehouses and data marts.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="fwk-38086-ch11_s05_p02">Since running analytics against transactional data can bog down a system, and since most organizations need to combine and reformat data from multiple sources, firms typically need to create separate data repositories for their reporting and analytics work—a kind of staging area from which to turn that data into information.</p>
+    <p class="para editable block" id="fwk-38086-ch11_s05_p03">Two terms you’ll hear for these kinds of repositories are <span class="margin_term"><a class="glossterm">data warehouse</a><span class="glossdef">A set of databases designed to support decision making in an organization.</span></span> and <span class="margin_term"><a class="glossterm">data mart</a><span class="glossdef">A database or databases focused on addressing the concerns of a specific problem (e.g., increasing customer retention, improving product quality) or business unit (e.g., marketing, engineering).</span></span>. A data warehouse is a set of databases designed to support decision making in an organization. It is structured for fast online queries and exploration. Data warehouses may aggregate enormous amounts of data from many different operational systems.</p>
+    <p class="para editable block" id="fwk-38086-ch11_s05_p04">A data mart is a database focused on addressing the concerns of a specific problem (e.g., increasing customer retention, improving product quality) or business unit (e.g., marketing, engineering).</p>
+    <p class="para editable block" id="fwk-38086-ch11_s05_p05">Marts and warehouses may contain huge volumes of data. For example, a firm may not need to keep large amounts of historical point-of-sale or transaction data in its operational systems, but it might want past data in its data mart so that managers can hunt for patterns and trends that occur over time.</p>
+    <div class="figure large editable block" id="fwk-38086-ch11_s05_f01">
+        <p class="title"><span class="title-prefix">Figure 11.2</span> </p>
+        <img src="section_15/05e20bed2a0d38f34c4a9262a077a5ee.jpg">
+        <p class="para">Information systems supporting operations (such as TPS) are typically separate, and “feed” information systems used for analytics (such as data warehouses and data marts).</p>
+    </div>
+    <p class="para editable block" id="fwk-38086-ch11_s05_p06">It’s easy for firms to get seduced by a software vendor’s demonstration showing data at your fingertips, presented in pretty graphs. But as mentioned earlier, getting data in a format that can be used for analytics is hard, complex, and challenging work. Large data warehouses can cost millions and take years to build. Every dollar spent on technology may lead to five to seven more dollars on consulting and other services.<span class="footnote" id="fwk-38086-fn11_028">R. King, “Intelligence Software for Business,” <em class="emphasis">BusinessWeek</em> podcast, February 27, 2009.</span></p>
+    <p class="para editable block" id="fwk-38086-ch11_s05_p07">Most firms will face a trade-off—do we attempt a large-scale integration of the whole firm, or more targeted efforts with quicker payoffs? Firms in fast-moving industries or with particularly complex businesses may struggle to get sweeping projects completed in enough time to reap benefits before business conditions change. Most consultants now advise smaller projects with narrow scope driven by specific business goals.<span class="footnote" id="fwk-38086-fn11_029">D. Rigby and D. Ledingham, “CRM Done Right,” <em class="emphasis">Harvard Business Review</em>, November 2004; and R. King, “Intelligence Software for Business,” <em class="emphasis">BusinessWeek</em> podcast, February 27, 2009.</span></p>
+    <p class="para editable block" id="fwk-38086-ch11_s05_p08">Firms can eventually get to a unified data warehouse but it may take time. Even analytics king Wal-Mart is just getting to that point. Retail giant Wal-Mart once reported having over seven hundred different data marts and hired Hewlett-Packard for help in bringing the systems together to form a more integrated data warehouse.<span class="footnote" id="fwk-38086-fn11_030">H. Havenstein, “HP Nabs Wal-Mart as Data Warehousing Customer,” <em class="emphasis">Computerworld</em>, August 1, 2007.</span></p>
+    <p class="para editable block" id="fwk-38086-ch11_s05_p09">The old saying from the movie <em class="emphasis">Field of Dreams</em>, “If you build it, they will come,” doesn’t hold up well for large-scale data analytics projects. This work should start with a clear vision with business-focused objectives. When senior executives can see objectives illustrated in potential payoff, they’ll be able to champion the effort, and experts agree, having an executive champion is a key success factor. Focusing on business issues will also drive technology choice, with the firm better able to focus on products that best fit its needs.</p>
+    <p class="para editable block" id="fwk-38086-ch11_s05_p10">Once a firm has business goals and hoped-for payoffs clearly defined, it can address the broader issues needed to design, develop, deploy, and maintain its system:<span class="footnote" id="fwk-38086-fn11_031">Key points adapted from Davenport and J. Harris, <em class="emphasis">Competing on Analytics: The New Science of Winning</em> (Boston: Harvard Business School Press, 2007).</span></p>
+    <ul class="itemizedlist editable block" id="fwk-38086-ch11_s05_l02">
+        <li>
+<em class="emphasis">Data relevance.</em> What data is needed to compete on analytics and to meet our current and future goals?</li>
+        <li>
+<em class="emphasis">Data sourcing.</em> Can we even get the data we’ll need? Where can this data be obtained from? Is it available via our internal systems? Via third-party data aggregators? Via suppliers or sales partners? Do we need to set up new systems, surveys, and other collection efforts to acquire the data we need?</li>
+        <li>
+<em class="emphasis">Data quantity.</em> How much data is needed?</li>
+        <li>
+<em class="emphasis">Data quality.</em> Can our data be trusted as accurate? Is it clean, complete, and reasonably free of errors? How can the data be made more accurate and valuable for analysis? Will we need to ‘scrub,’ calculate, and consolidate data so that it can be used?</li>
+        <li>
+<em class="emphasis">Data hosting.</em> Where will the systems be housed? What are the hardware and networking requirements for the effort?</li>
+        <li>
+<em class="emphasis">Data governance.</em> What rules and processes are needed to manage data from its creation through its retirement? Are there operational issues (backup, disaster recovery)? Legal issues? Privacy issues? How should the firm handle security and access?</li>
+    </ul>
+    <p class="para editable block" id="fwk-38086-ch11_s05_p11">For some perspective on how difficult this can be, consider that an executive from one of the largest U.S. banks once lamented at how difficult it was to get his systems to do something as simple as properly distinguishing between men and women. The company’s customer-focused data warehouse drew data from thirty-six separate operational systems—bank teller systems, ATMs, student loan reporting systems, car loan systems, mortgage loan systems, and more. Collectively these legacy systems expressed gender in <em class="emphasis">seventeen</em> different ways: “M” or “F”; “m” or “f”; “Male” or “Female”; “MALE” or “FEMALE”; “1” for man, “0” for woman; “0” for man, “1” for woman and more, plus various codes for “unknown.” The best math in the world is of no help if the values used aren’t any good. There’s a saying in the industry, “garbage in, garbage out.”</p>
+    <div class="callout editable block" id="fwk-38086-ch11_s05_n02">
+        <h3 class="title">E-discovery: Supporting Legal Inquiries</h3>
+        <p class="para" id="fwk-38086-ch11_s05_p12">Data archiving isn’t just for analytics. Sometimes the law requires organizations to dive into their electronic records. <span class="margin_term"><a class="glossterm">E-discovery</a><span class="glossdef">The process of identifying and retrieving relevant electronic information to support litigation efforts.</span></span> refers to identifying and retrieving relevant electronic information to support litigation efforts. E-discovery is something a firm should account for in its archiving and data storage plans. Unlike analytics that promise a boost to the bottom line, there’s no profit in complying with a judge’s order—it’s just a sunk cost. But organizations can be compelled by court order to scavenge their bits, and the cost to uncover difficult to access data can be significant, if not planned for in advance.</p>
+        <p class="para" id="fwk-38086-ch11_s05_p13">In one recent example, the Office of Federal Housing Enterprise Oversight (OFHEO) was subpoenaed for documents in litigation involving mortgage firms Fannie Mae and Freddie Mac. Even though the OFHEO wasn’t a party in the lawsuit, the agency had to comply with the search—an effort that cost $6 million, a full 9 percent of its total yearly budget.<span class="footnote" id="fwk-38086-fn11_032">A. Conry-Murray, “The Pain of E-discovery,” <em class="emphasis">InformationWeek</em>, June 1, 2009.</span></p>
+    </div>
+    <div class="key_takeaways editable block" id="fwk-38086-ch11_s05_n03">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="fwk-38086-ch11_s05_l03">
+            <li>Data warehouses and data marts are repositories for large amounts of transactional data awaiting analytics and reporting.</li>
+            <li>Large data warehouses are complex, can cost millions, and take years to build.</li>
+        </ul>
+    </div>
+    <div class="exercises editable block" id="fwk-38086-ch11_s05_n04">
+        <h3 class="title">Questions and Exercises</h3>
+        <ol class="orderedlist" id="fwk-38086-ch11_s05_l04">
+            <li>List the issues that need to be addressed in order to design, develop, deploy, and maintain data warehouses and data marts.</li>
+            <li>What is meant by “data relevance”?</li>
+            <li>What is meant by “data governance”?</li>
+            <li>What is the difference between a data mart and a data warehouse?</li>
+            <li>Why are data marts and data warehouses necessary? Why can’t an organization simply query its transactional database?</li>
+            <li>How can something as simple as customer gender be difficult to for a large organization to establish in a data warehouse?</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s15-04-data-rich-information-poor.html"><img src="shared/images/batch-left.png"></a> <a href="s15-04-data-rich-information-poor.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s15-06-the-business-intelligence-tool.html">Next Section</a> <a href="s15-06-the-business-intelligence-tool.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>
